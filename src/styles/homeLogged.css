@@ -1,0 +1,80 @@
+.home-logged-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header con la foto y nombre del usuario */
+.home-logged-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background: #4facfe;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.home-logged-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.home-logged-user-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+.home-logged-user-name {
+  font-size: 1.2rem;
+}
+
+/* Contenido principal */
+.home-logged-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Barra lateral */
+.home-logged-sidebar {
+  width: 250px;
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+
+.home-logged-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-logged-sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.home-logged-sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.home-logged-sidebar ul li a:hover {
+  background: #555;
+}
+
+/* Contenido */
+.home-logged-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f8f9fa;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

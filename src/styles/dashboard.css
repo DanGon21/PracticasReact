@@ -1,0 +1,141 @@
+/* dashboard.css */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el header */
+.dashboard-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed; /* Fija el encabezado en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+/* Ajusta el margen superior del contenedor para que el contenido no quede oculto debajo del encabezado fijo */
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Ajusta este valor según la altura de tu encabezado */
+}
+
+/* Sidebar */
+.sidebar2 {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  position: fixed; /* Fija la barra lateral en su posición */
+  top: 60px; /* Ajusta este valor según la altura de tu encabezado */
+  left: 0;
+  z-index: 999; /* Asegura que la barra lateral esté por debajo del encabezado */
+}
+
+.sidebar2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar2 ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar2 ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar2 ul li a:hover {
+  background-color: #555;
+}
+
+.sidebar2 ul li strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #f8f9fa;
+}
+
+.sidebar2 ul li hr {
+  border: none;
+  border-top: 1px solid #495057;
+  margin: 10px 0;
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 250px; /* Deja espacio para la barra lateral */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+}
+
+/* Contenedor para las dos cards (gráfico y media) */
+.dashboard-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Estilo de la Card con el gráfico */
+.dashboard-card {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  max-width: 600px; /* Limitar el ancho de la card */
+  width: 100%; /* Para que se adapte al contenedor */
+}
+
+.dashboard-card h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px; /* Ajustar la altura del gráfico */
+}
+
+/* Estilo de la Card con la media de dinero ganado */
+.dashboard-card-avg {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  max-width: 400px; /* Limitar el ancho de la card */
+  width: 100%;
+}
+
+.dashboard-card-avg h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dashboard-card-avg p {
+  font-size: 1.2rem;
+  color: #666;
+}
