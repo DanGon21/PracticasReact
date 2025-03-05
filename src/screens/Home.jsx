@@ -60,12 +60,12 @@ function Home() {
           </Link>
         </div>
       </header>
-
+ 
       <div className="home-logged-content">
           <nav className="home-logged-sidebar">
             <ul>
               <li><Link to="/app1">App1</Link></li>
-              <li><Link to="/app1">App2</Link></li>
+              <li><Link to="/organizaciones">organizaciones</Link></li>
               <li><Link to="/app1">App3</Link></li>
             </ul>
           </nav>

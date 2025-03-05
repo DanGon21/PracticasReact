@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuthStore from "../features/auth/authStore";
 import '../styles/formstyles.css';
